@@ -1,1 +1,1 @@
-# rsschool-cv
+https://varapushka.github.io/rsschool-cv/
