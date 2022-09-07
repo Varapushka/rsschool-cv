@@ -1,4 +1,4 @@
-## [rsschool-cv](https://varapushka.github.io/rsschool-cv/)
+## [rsschool-cv](https://varapushka.github.io/rsschool-cv/cv)
 
 # **Sergei Voropaev**
 
@@ -30,9 +30,10 @@ I’m interested in Web Development and I believe, that my ability to learn and 
 - JavaScript Basics
 
 ---
+
 ## **Code example:**
 
-**KATA from CODEWARS:** Given a positive integer n written as abcd... (a, b, c, d... being digits) and a positive integer p. We want to find a positive integer k, if it exists, such that the sum of the digits of n taken to the successive powers of p is equal to k * n.
+**KATA from CODEWARS:** Given a positive integer n written as abcd... (a, b, c, d... being digits) and a positive integer p. We want to find a positive integer k, if it exists, such that the sum of the digits of n taken to the successive powers of p is equal to k \* n.
 
 ```
 function digPow(n, p) {
@@ -46,12 +47,14 @@ for (i = 0; i < arrInt.length; i++, p++) {
   return (k >= 1 && Number.isInteger(k)) ? k : -1;
 }
 ```
+
 ---
 
 ## **Courses:**
 
 - RS Schools Course «JavaScript/Front-end. Stage 1» (in progress)
 - JavaScript [https://learn.javascript.ru/](https://learn.javascript.ru/)
+
 ---
 
 ## **Languagies:**
