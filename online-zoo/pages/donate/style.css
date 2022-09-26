@@ -1,0 +1,518 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../..assets/fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../..assets/fonts/roboto-v30-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+    url('../..assets/fonts/roboto-v30-latin-500.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../..assets/fonts/roboto-v30-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url('../..assets/fonts/roboto-v30-latin-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../..assets/fonts/roboto-v30-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+  width: 1600px;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 1600px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333b41;
+}
+
+/*  header styles start */
+.header {
+  background: #000000;
+}
+
+.wrapper {
+}
+
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header__logo {
+  position: relative;
+  margin-top: 14px;
+  margin-left: 220px;
+  margin-bottom: 14px;
+  width: 82px;
+  height: 52px;
+  justify-items: center;
+}
+
+.logo__header-text {
+  position: absolute;
+  width: 72.49px;
+  height: 44.91px;
+  left: 4.75px;
+  top: 3.55px;
+}
+
+.header__logo-img {
+  position: absolute;
+  top: 0px;
+}
+
+.header__logo-img-bamboo {
+  position: absolute;
+  top: 24px;
+  left: 11.5px;
+}
+
+.header_logo-link {
+  width: 72.49px;
+  height: 44.91px;
+  font-weight: 400;
+  font-size: 19.0145px;
+  line-height: 120%;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header__nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 28px 58px 28px 63px;
+}
+
+.header__item {
+  margin-right: 58px;
+}
+
+.header__item:last-child {
+  margin-right: 438px;
+}
+
+.header__designed {
+  align-items: center;
+  margin: 28px 0px 28px 0px;
+}
+
+.header__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header__link:hover,
+.header__link:focus {
+  color: #f9804b;
+}
+
+.header__about {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #f9804b;
+  text-decoration: none;
+}
+
+/* header styles end */
+
+.big-panda__bg {
+  height: 390px;
+  background: url(/online-zoo/assets/images/Giant\ Panda.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.pick-and-feed-a-friend {
+  background: linear-gradient(
+      315.75deg,
+      rgba(254, 210, 144, 0.7) 30.06%,
+      #febdab 100.95%,
+      rgba(254, 210, 144, 0.7) 106.36%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    );
+}
+
+.p-a-f__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 1160px;
+  margin: auto;
+}
+.p-a-f__title {
+  margin-top: 40px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.p-a-f__info {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.p-a-f__donate-info {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 130%;
+  color: #fe9013;
+}
+
+.donate-box__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 92px 62px;
+  width: 1160px;
+  height: 964px;
+  background: rgba(255, 255, 255, 0.52);
+  border-radius: 20px;
+}
+
+.donate-box__title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  color: #fe9013;
+}
+
+.donate-box__desc {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #333b41;
+}
+
+.donate-counter__pic {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.days-amount {
+  margin-top: 105px;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 80%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.day-counter__text {
+  margin-right: 11px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #333b41;
+}
+
+.donate-counter__x-icon {
+  margin-top: 130px;
+  margin-right: 64px;
+  align-content: center;
+  width: 14px;
+  height: 14px;
+}
+
+.donate__prog-bar {
+  position: relative;
+  width: 976px;
+  height: 27px;
+  background: #404950;
+  border-radius: 2px;
+  margin-bottom: 6px;
+}
+
+.donate__prog-bar-ruler {
+  position: absolute;
+  margin: 12.5px 30.5px;
+  transform: translateY(-27px);
+  width: 915px;
+  height: 2px;
+  background: #72828e;
+}
+
+.donate__prog-bar-scale-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8.5px 0px 8.5px 6px;
+  width: 960px;
+  height: 10px;
+}
+
+.dot-radius {
+  z-index: 1;
+  padding: 20px;
+}
+
+.dot-radius:hover {
+  transform: scale(1.2);
+}
+.donate__prog-bar-scale {
+  z-index: 1;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffee2e;
+}
+
+.donate__prog-bar-roller {
+  z-index: 2;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 272.5px;
+  bottom: 0px;
+  transform: translateY(6px);
+}
+
+.donate__prog-bar-roller:hover {
+  opacity: 0.8;
+}
+
+.donate__dollar-ruler {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 950px;
+}
+
+.dollar-sum-box {
+  display: flex;
+  align-items: center;
+}
+
+.dollar {
+  height: 20px;
+  width: 10px;
+  margin: 9px 2px 7px 0px;
+}
+.dollar-item {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #333b41;
+}
+
+.donate-form__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.donate__input {
+  height: 54px;
+  width: 268px;
+  background: rgba(255, 255, 255, 0.52);
+backdrop-filter: blur(2px);
+  border: 1px solid #929699;
+  border-radius: 2px;
+}
+
+.donate__btn-radio{
+  margin-top: 27px;
+  margin-right: 118px;
+  width: 16px;
+height: 16px;
+border-radius: 50%;
+border: 1px solid #FE9013;
+}
+
+.donate__btn-radio-text{
+  margin-left: 26px;
+  font-weight: 500;
+font-size: 16px;
+line-height: 140%;
+color: #333B41;
+}
